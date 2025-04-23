@@ -103,14 +103,11 @@ const styles = {
 const About = () => {
 
   const goToMail = () => {
-    window.location.href = "mailto:krupadbhatia0521@gmail.com";
-    // Replace "your_email@example.com" with your actual email address
-    // Make sure to replace "your_email" with your actual email address
-    // This will open your default email client with the provided email address pre-filled
-
-
-
-  }
+    const subject = encodeURIComponent("Let's connect!");
+    const body = encodeURIComponent("Hi Krupa,\n\nI'm reaching out regarding...");
+    window.location.href = `mailto:krupadbhatia0521@gmail.com?subject=${subject}&body=${body}`;
+  };
+  
   return (
     <section id="about" style={styles.section}>
       <h3 style={styles.heading}>ABOUT ME</h3>
@@ -127,7 +124,7 @@ const About = () => {
         {/* About Text */}
         <div style={styles.textContainer}>
         <p style={styles.paragraph}>  
-  <strong>I'm a Full Stack Developer with 2.6+ years of experience, specializing in building and managing both the Frontend and Backend of scalable Web Applications and APIs.</strong> With <strong>strong expertise in Backend Development</strong>, I ensure <strong>seamless performance, security, and efficiency</strong> in projects I work on.  
+  <strong>I'm a Full Stack Developer with 2.10+ years of experience, specializing in building and managing both the Frontend and Backend of scalable Web Applications and APIs.</strong> With <strong>strong expertise in Backend Development</strong>, I ensure <strong>seamless performance, security, and efficiency</strong> in projects I work on.  
   <br /><br />  
   I enjoy <strong>exploring new technologies</strong> and staying <strong>up-to-date with industry trends</strong>. I frequently <strong>share insights, best practices, and project experiences</strong> to help other developers navigate the world of <strong>Full Stack Development</strong>. Whether it’s <strong>optimizing backend performance, designing scalable architectures, or improving frontend user experience</strong>, I believe in <strong>continuous learning and collaboration</strong>.  
   <br /><br />  
@@ -151,7 +148,18 @@ const About = () => {
           <div style={styles.skill}>React</div>
           <div style={styles.skill}>Node.js</div>
           <div style={styles.skill}>Git</div>
-          <div style={styles.skill}>GitHub</div>
+          <div style={styles.skill}>TypeScript</div>
+          <div style={styles.skill}>Express.js</div>
+          <div style={styles.skill}>TailwindCSS</div>
+          <div style={styles.skill}>PostgreSQL</div>
+          <div style={styles.skill}>MongoDB</div>
+          <div style={styles.skill}>mySQL</div>
+          <div style={styles.skill}>Problem-Solving</div>
+          <div style={styles.skill}>S3</div>
+          <div style={styles.skill}>EC2</div>
+          <div style={styles.skill}>Lambda</div>
+          <div style={styles.skill}>SQS</div>
+          <div style={styles.skill}>SNS</div>
         </div>
       </div>
     </section>

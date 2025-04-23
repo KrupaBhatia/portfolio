@@ -9,7 +9,7 @@ const styles = {
     alignItems: "center",
     textAlign: "center",
     padding: "20px",
-    backgroundImage: "url('/background.jpg')", // Correct way to use public folder image
+    backgroundImage: "url('./background.jpg')", // Correct way to use public folder image
     backgroundSize: "cover",
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
@@ -75,8 +75,8 @@ const Home = () => {
       <div style={styles.content}>
         <h1 style={styles.heading}>HEY, I'M KRUPA BHATIA</h1>
         <p style={styles.paragraph}>
-          A Result-Oriented Web Developer building and managing Websites and Web Applications 
-          that lead to the success of the overall product.
+        Result-oriented Software Developer with 3 years of experience in building and maintaining scalable web applications.
+        Focused on delivering clean code and impactful solutions that contribute to overall product success.
         </p>
         <button 
   style={styles.button} 

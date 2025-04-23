@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Website Name</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        header {
+            background: linear-gradient(135deg, #0056d6, #ff7300);
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        header p {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        header a {
+            background-color: #ffffff;
+            color: #0056d6;
+            padding: 1rem 2rem;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+        }
+        header a:hover {
+            background-color: #ff7300;
+            color: white;
+        }
+        nav {
+            background-color: #333;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 1.2rem;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+        section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        section p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+        .services, .how-it-works, .why-us {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .service-item, .step, .reason {
+            background-color: #f7f7f7;
+            margin: 1rem;
+            padding: 2rem;
+            border-radius: 8px;
+            width: 300px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+        }
+        footer a {
+            color: #ff7300;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>INDIA'S FIRST QUICK SERVICE APP</h1>
+        <p>On-demand home services to empower urban households</p>
+        <a href="#services">See Our Services</a>
+    </header>
+
+    <nav>
+        <a href="#services">Services</a>
+        <a href="#how-it-works">How It Works</a>
+        <a href="#why-us">Why Us?</a>
+        <a href="#faqs">FAQs</a>
+    </nav>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="services">
+            <div class="service-item">
+                <h3>General Cleaning</h3>
+            </div>
+            <div class="service-item">
+                <h3>Dishwashing</h3>
+            </div>
+            <div class="service-item">
+                <h3>Laundry</h3>
+            </div>
+            <div class="service-item">
+                <h3>Fan Cleaning</h3>
+            </div>
+            <div class="service-item">
+                <h3>Kitchen Prep</h3>
+            </div>
+            <div class="service-item">
+                <h3>Bathroom Cleaning</h3>
+            </div>
+            <div class="service-item">
+                <h3>Window Cleaning</h3>
+            </div>
+            <div class="service-item">
+                <h3>Kitchen Cleaning</h3>
+            </div>
+        </div>
+    </section>
+
+    <section id="how-it-works">
+        <h2>How It Works</h2>
+        <div class="how-it-works">
+            <div class="step">
+                <h3>Step 1: Snabbit Your Way</h3>
+                <p>Need help now? Get a Snabbit expert at your doorstep in just 15 minutes. Prefer a later time? Schedule what works best for you.</p>
+            </div>
+            <div class="step">
+                <h3>Step 2: Set Time & Duration</h3>
+                <p>Choose a time, set the duration, and get multiple tasks done in one booking.</p>
+            </div>
+            <div class="step">
+                <h3>Step 3: Experts Arrive On-Time</h3>
+                <p>Our experts reach your doorstep at the scheduled time. Share the OTP to start the service and enjoy a smooth, hassle-free experience.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="why-us">
+        <h2>Why Choose Us</h2>
+        <div class="why-us">
+            <div class="reason">
+                <h3>Background Verified and Trusted Experts</h3>
+            </div>
+            <div class="reason">
+                <h3>Professionally Trained for Home Cleaning</h3>
+            </div>
+            <div class="reason">
+                <h3>One Booking, Many Tasks</h3>
+            </div>
+            <div class="reason">
+                <h3>Empowering Workforce</h3>
+            </div>
+            <div class="reason">
+                <h3>Quality You Can Trust</h3>
+            </div>
+            <div class="reason">
+                <h3>Trusted by 6000+ Families</h3>
+            </div>
+        </div>
+    </section>
+
+    <section id="faqs">
+        <h2>FAQs</h2>
+        <div class="faq">
+            <h3>What is Snabbit?</h3>
+            <p>Snabbit is India's first on-demand services platform, offering quick and reliable home chore assistance right to your doorstep within 15 minutes.</p>
+        </div>
+        <div class="faq">
+            <h3>How do I book a service?</h3>
+            <p>Booking a service is easy! Just download our app, choose your preferred service and time, and confirm your booking.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Your Website Name. All rights reserved.</p>
+        <p><a href="mailto:contact@yourwebsite.com">Contact Us</a></p>
+    </footer>
+</body>
+</html>

@@ -102,7 +102,17 @@ const styles = {
     marginBottom: "30px",
     alignItems: "center",
     textAlign: "center",
-  }
+  },
+description: {
+  padding: "10px 15px",
+  border: "none",
+  borderRadius: "5px",
+  cursor: "pointer",
+  textDecoration: "none",
+  transition: "transform 0.2s ease",
+  textAlign: "left"  // Fix: aligns text to the left
+}
+
     };
 
 
@@ -110,26 +120,26 @@ const styles = {
         {
           id: 1,
           title: "Portfolio Website",
-          description: "A personal portfolio to showcase projects and skills.",
+          description: "Designed and developed a sleek, responsive portfolio to showcase projects and skills with optimized UX and navigation.",
           techStack: ["React", "CSS", "JavaScript"],
-          imageUrl: "/dope.png",
+          imageUrl: "./dope.png",
           link: "/#home",
         },
         {
           id: 2,
-          title: "E-Commerce App",
-          description: "A full-stack e-commerce application with payment integration.",
-          techStack: ["React", "Node.js", "MongoDB", "Express"],
-          imageUrl: "/pic2.png",
-
+          title: "Admin Module",
+          description: "Independently architected and maintained the Admin Module using Node.js and PostgreSQL, implementing business logic, access control, and operational workflows. Refactored and normalized database structures to enhance query performance and support scalable data management for 2,000+ clients",
+          techStack: ["React", "Node.js", "PostgrSQL", "Express","e-charts"],
+          imageUrl: "./pic2.png",
+          link: "https://controlpanel.mysellercentral.com/"
         },
-        {
-          id: 3,
-          title: "Task Manager",
-          description: "A task management tool to organize work efficiently.",
-          techStack: ["Vue.js", "Firebase"],
-          imageUrl: "your-task-manager-image-url.jpg",
-        }
+        // {
+        //   id: 3,
+        //   title: "Task Manager",
+        //   description: "A task management tool to organize work efficiently.",
+        //   techStack: ["Vue.js", "Firebase"],
+        //   imageUrl: "your-task-manager-image-url.jpg",
+        // }
       ];
 
 const Projects = () => {
@@ -151,7 +161,7 @@ const Projects = () => {
           <img src={project.imageUrl} alt={project.title} style={styles.projectImage} />
           <div style={styles.projectDetails}>
             <h2 style={styles.subHeading}>{project.title}</h2>
-            <p>{project.description}</p>
+            <p style={styles.description}>{project.description}</p>
             <div style={styles.skillsContainer}>
   {project.techStack.map((tech, index) => (
     <span key={index} style={styles.skill}>{tech}</span>
