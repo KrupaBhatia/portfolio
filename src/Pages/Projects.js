@@ -133,13 +133,14 @@ description: {
           imageUrl: "./pic2.png",
           link: "https://controlpanel.mysellercentral.com/"
         },
-        // {
-        //   id: 3,
-        //   title: "Task Manager",
-        //   description: "A task management tool to organize work efficiently.",
-        //   techStack: ["Vue.js", "Firebase"],
-        //   imageUrl: "your-task-manager-image-url.jpg",
-        // }
+        {
+          id: 3,
+          title: "Personal Budget Tracker",
+          description: "A web application to track income, expenses, and monthly budgets with categorized entries and real-time financial summaries.",
+          techStack: ["React", "Django", "Django REST Framework"],
+          imageUrl: "./budget.png",
+          link: "https://molten-test-7729.web.app/login"
+        }        
       ];
 
 const Projects = () => {
